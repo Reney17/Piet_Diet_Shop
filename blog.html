@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Pet Diet App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/logo.jpg" alt="Pet Diet App Logo" class="logo" />
+      </div>
+      <button id="menu-toggle" class="menu-toggle">
+        &#9776;
+        <!-- Unicode for a burger menu icon -->
+      </button>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="meals.html">Meal Plans</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Our Blog</h1>
+      <section class="blog-posts">
+        <div class="blog-post">
+          <img src="images/blog1.jpeg" alt="Blog Post 1" />
+          <h3>Benefits of a Plant-Based Diet for Pets</h3>
+          <p>Explore the advantages of switching to plant-based meals.</p>
+          <button onclick="readMore()">Read More</button>
+        </div>
+        <div class="blog-post">
+          <img src="images/blog2.jpeg" alt="Blog Post 2" />
+          <h3>How to Transition Your Pet's Diet</h3>
+          <p>Learn the steps to smoothly transition your pet's diet.</p>
+          <button onclick="readMore()">Read More</button>
+        </div>
+        <div class="blog-post">
+          <img src="images/blog3.webp" alt="Blog Post 3" />
+          <h3>Sustainable Ingredients for Pet Food</h3>
+          <p>Discover eco-friendly ingredients for a healthy pet diet.</p>
+          <button onclick="readMore()">Read More</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Pet Diet App. All rights reserved.</p>
+        <div class="social-media-icons">
+          <a
+            href="https://www.facebook.com/mbalentle.nel"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@palesajulie"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/palesajuliemashile?igsh=M3V3YWo4NTl6Ym1h"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

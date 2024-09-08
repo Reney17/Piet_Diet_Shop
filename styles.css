@@ -1,0 +1,574 @@
+/* Import Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  margin-left: auto; /* Move the navigation to the right */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #d9ffd9;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #4caf50; /* Adjust as needed */
+}
+
+header .logo {
+  height: 50px; /* Adjust the height as needed */
+  width: 50px; /* Make sure the width and height are equal */
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* BURGER MENU  */
+
+/* Base styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4caf50;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin-left: 20px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Burger menu button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #e0f7fa;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
+
+/*  */
+
+#menu-toggle {
+  display: none;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section with Background Image */
+#hero {
+  background-image: url("images/hero.webp"); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image within the section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 80px 20px; /* Adds padding to ensure content doesn't touch edges */
+  color: white; /* Sets text color for better contrast */
+  text-align: center; /* Centers text content */
+  position: relative; /* Allows positioning of elements relative to this section */
+  overflow: hidden; /* Ensures no overflow issues */
+}
+
+#hero h1,
+#hero p,
+#hero button {
+  position: relative;
+  z-index: 2; /* Ensures text appears above the background image */
+}
+
+#hero::after {
+  content: "";
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a dark overlay for better text contrast */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Additional styling for button */
+#hero button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+#hero button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+#hero img {
+  display: none; /* Hides the image tag in HTML as we're using a background image */
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#hero button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#hero button:hover {
+  background-color: #004d40;
+}
+
+.feature-summary {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-summary img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-summary h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.feature-summary p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.feature-summary a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.feature-summary a:hover {
+  color: #388e3c;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: left; /* Aligns text to the left */
+  padding: 10px 20px; /* Adds padding for spacing */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex; /* Allows flexbox layout */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Aligns items vertically centered */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit the max width of the footer content */
+  margin: 0 auto; /* Centers the footer content */
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media-icons a {
+  color: white; /* Adjust color as needed */
+  text-decoration: none;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.social-media-icons a:hover {
+  color: #4caf50; /* Adjust hover color as needed */
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: block;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Meal Plans */
+.meal-plan {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.meal-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meal-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.meal-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.meal-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Blog Posts */
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    background-color: #4caf50;
+    position: absolute;
+    top: 100%;
+    right: 0; /* Align the menu to the right */
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .feature-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-summary img {
+    margin-bottom: 10px;
+  }
+
+  .meal-card,
+  .blog-post {
+    flex: 1 1 100%;
+  }
+}
+/* Footer mb responsiveness */
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Increase padding for better spacing */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width */
+    gap: 10px; /* Space between the copyright and social media icons */
+  }
+
+  .social-media-icons {
+    margin-top: 10px; /* Space between copyright text and social media icons */
+    gap: 15px; /* Adjust the space between icons for smaller screens */
+  }
+}
+
+/* Flexbox for feature items */
+#features-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature-item {
+  text-align: center;
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+/* Make the images fit inside the boxes */
+.feature-item img {
+  width: 100%;
+  height: 200px; /* Adjust this to control the height */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 8px; /* Optional: to match the box rounding */
+}
+
+/* Button styling */
+button {
+  background-color: #00bfa5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00796b;
+}
