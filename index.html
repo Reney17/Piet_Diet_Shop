@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Diet App - Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <img src="images/logo.jpg" alt="Pet Diet App Logo" class="logo" />
-      </div>
-      <button id="menu-toggle" class="menu-toggle">
-        &#9776;
-        <!-- Unicode for a burger menu icon -->
-      </button>
-      <nav id="nav-menu" class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="meals.html">Meal Plans</a></li>
-          <li><a href="subscription.html">Subscription</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section id="hero">
-        <h1>Welcome to the Pet Diet App</h1>
-        <p>
-          Your go-to solution for personalized, sustainable, and healthy pet
-          diets.
-        </p>
-        <button onclick="learnMore()">Learn More</button>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Diet App - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
 
-      <section id="features-summary">
-        <h2>Key Features</h2>
+<body>
+  <header class="max-padd-container">
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Pet Diet App Logo" class="logo" />
+    </div>
+    <button id="menu-toggle" class="menu-toggle">
+      &#9776;
+      <!-- Unicode for a burger menu icon -->
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="meals.html">Meal Plans</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to the Pet Diet App</h1>
+      <p>
+        Your go-to solution for personalized, sustainable, and healthy pet
+        diets.
+      </p>
+      <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section id="features-summary">
+      <h2>Key Features</h2>
+      <div class="home-container">
         <div class="feature-summary">
           <img src="images/meals.webp" alt="Personalized Meal Plans" />
           <h3>Personalized Meal Plans</h3>
@@ -61,46 +61,37 @@
           <p>Developed by veterinary experts.</p>
           <a href="features.html">Learn More</a>
         </div>
-      </section>
-
-      <section id="subscription">
-        <h2>Subscribe Now</h2>
-        <p>
-          Flexible plans tailored to your pet’s needs.
-          <a href="subscription.html">Sign Up</a>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Pet Diet App. All rights reserved.</p>
-        <div class="social-media-icons">
-          <a
-            href="https://www.facebook.com/mbalentle.nel"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="https://www.tiktok.com/@palesajulie"
-            target="_blank"
-            aria-label="TikTok"
-          >
-            <i class="fab fa-tiktok"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/palesajuliemashile?igsh=M3V3YWo4NTl6Ym1h"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section id="subscription">
+      <h2>Subscribe Now</h2>
+      <p>
+        Flexible plans tailored to your pet’s needs.
+        <a href="subscription.html">Sign Up</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="max-padd-container">
+    <div class="footer-content">
+      <p>&copy; 2024 Pet Diet App. All rights reserved.</p>
+      <div class="social-media-icons">
+        <a href="https://www.facebook.com/mbalentle.nel" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@palesajulie" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/palesajuliemashile?igsh=M3V3YWo4NTl6Ym1h" target="_blank"
+          aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

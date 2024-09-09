@@ -1,132 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Diet App - Features</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <img src="images/logo.jpg" alt="Pet Diet App Logo" class="logo" />
-      </div>
-      <button id="menu-toggle" class="menu-toggle">
-        &#9776;
-        <!-- Unicode for a burger menu icon -->
-      </button>
-      <nav id="nav-menu" class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="meals.html">Meal Plans</a></li>
-          <li><a href="subscription.html">Subscription</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section id="features-intro">
-        <h1>Discover Our Key Features</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Diet App - Features</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <header class="max-padd-container">
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Pet Diet App Logo" class="logo" />
+    </div>
+    <button id="menu-toggle" class="menu-toggle">
+      &#9776;
+      <!-- Unicode for a burger menu icon -->
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="meals.html">Meal Plans</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features-intro">
+      <h1>Discover Our Key Features</h1>
+      <p>
+        Explore how our app can revolutionize your pet's diet with sustainable
+        and personalized solutions.
+      </p>
+    </section>
+
+    <section id="features-list">
+      <div class="feature-item">
+        <div>
+          <img src="images/personalized-meal.jpeg" alt="Personalized Meal Plans" />
+        </div>
+        <h2>Personalized Meal Plans</h2>
         <p>
-          Explore how our app can revolutionize your pet's diet with sustainable
-          and personalized solutions.
+          Create tailored diets based on your pet's unique needs, preferences,
+          and health conditions.
         </p>
-      </section>
-
-      <section id="features-list">
-        <div class="feature-item">
-          <img
-            src="images/personalized-meal.jpeg"
-            alt="Personalized Meal Plans"
-          />
-          <h2>Personalized Meal Plans</h2>
-          <p>
-            Create tailored diets based on your pet's unique needs, preferences,
-            and health conditions.
-          </p>
-          <button onclick="exploreFeature('personalized')">Explore</button>
-        </div>
-
-        <div class="feature-item">
-          <img src="images/sustainable.jpeg" alt="Sustainable Practices" />
-          <h2>Sustainability Focus</h2>
-          <p>
-            We prioritize eco-friendly ingredients and packaging to support a
-            greener planet.
-          </p>
-          <button onclick="exploreFeature('sustainability')">Explore</button>
-        </div>
-
-        <div class="feature-item">
-          <img src="images/nutrition-expert.jpeg" alt="Nutrition Expert" />
-          <h2>Health and Nutrition</h2>
-          <p>
-            Our meal plans are developed in collaboration with veterinary
-            nutritionists for optimal health.
-          </p>
-          <button onclick="exploreFeature('nutrition')">Explore</button>
-        </div>
-      </section>
-
-      <section id="additional-features">
-        <h2>More Features</h2>
-        <div class="additional-feature-item">
-          <h3>Eco-Friendly Packaging</h3>
-          <p>
-            We use materials that reduce waste and minimize environmental
-            impact.
-          </p>
-        </div>
-        <div class="additional-feature-item">
-          <h3>Regular Consultations</h3>
-          <p>
-            Keep your pet's diet up-to-date with regular consultations and
-            updates.
-          </p>
-        </div>
-        <div class="additional-feature-item">
-          <h3>Flexible Subscriptions</h3>
-          <p>Choose a plan that fits your needs and make changes anytime.</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Pet Diet App. All rights reserved.</p>
-        <div class="social-media-icons">
-          <a
-            href="https://www.facebook.com/mbalentle.nel"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="https://www.tiktok.com/@palesajulie"
-            target="_blank"
-            aria-label="TikTok"
-          >
-            <i class="fab fa-tiktok"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/palesajuliemashile?igsh=M3V3YWo4NTl6Ym1h"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+        <button onclick="exploreFeature('personalized')">Explore</button>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="feature-item">
+        <img src="images/sustainable.jpeg" alt="Sustainable Practices" />
+        <h2>Sustainability Focus</h2>
+        <p>
+          We prioritize eco-friendly ingredients and packaging to support a
+          greener planet.
+        </p>
+        <button onclick="exploreFeature('sustainability')">Explore</button>
+      </div>
+
+      <div class="feature-item">
+        <img src="images/nutrition-expert.jpeg" alt="Nutrition Expert" />
+        <h2>Health and Nutrition</h2>
+        <p>
+          Our meal plans are developed in collaboration with veterinary
+          nutritionists for optimal health.
+        </p>
+        <button onclick="exploreFeature('nutrition')">Explore</button>
+      </div>
+    </section>
+
+    <section id="additional-features">
+      <h2>More Features</h2>
+      <div class="additional-feature-item">
+        <h3>Eco-Friendly Packaging</h3>
+        <p>
+          We use materials that reduce waste and minimize environmental
+          impact.
+        </p>
+      </div>
+      <div class="additional-feature-item">
+        <h3>Regular Consultations</h3>
+        <p>
+          Keep your pet's diet up-to-date with regular consultations and
+          updates.
+        </p>
+      </div>
+      <div class="additional-feature-item">
+        <h3>Flexible Subscriptions</h3>
+        <p>Choose a plan that fits your needs and make changes anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Pet Diet App. All rights reserved.</p>
+      <div class="social-media-icons">
+        <a href="https://www.facebook.com/mbalentle.nel" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@palesajulie" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/palesajuliemashile?igsh=M3V3YWo4NTl6Ym1h" target="_blank"
+          aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
